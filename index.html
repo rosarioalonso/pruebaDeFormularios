@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de formularios</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FORMULARIOS</h1> 
+</header>
+
+<section id="formulario">
+    <h2>Escribinos para más información</h2>
+    <form action="respuestas.html" method="post">
+        <div>
+            <label>
+                <span>NOMBRE</span>
+                <input type="text" name="nombre" required>
+            </label> 
+        </div>
+        
+        <div>
+            <label for="email">
+                <span>EMAIL</span>
+                <input type="email" name="email" required>
+            </label>
+        </div>
+        
+        <div>
+                <span>GENERO</span>
+                <label>
+                    <input type="radio" name="genero" value="f" required>
+                    <span>FEMENINO</span>
+                </label>
+                
+                <label>
+                    <input type="radio" name="genero" value="m" required>
+                    <span>MASCULINO</span>
+                </label>
+                
+                <label>
+                    <input type="radio" name="genero" value="nodicho" required>
+                    <span>PREFIERO NO DECIRLO</span>
+                </label>
+        </div>     
+        
+        <div>
+            <label for="campoLocalidad">
+                <span>LOCALIDAD</span>
+            </label>
+            <select name="localidad" id="campoLocalidad" required>
+                <option>perga</option>
+                <option>junin</option>
+                <option>arrecifes</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="campoMensaje">
+                <span>MENSAJE</span>
+                <textarea name="mensaje" id="campoMensaje" cols="30" rows="10" required></textarea>
+            </label>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar info">
+        </div>
+
+    </form>
+
+
+
+
+</section>
+
+</body>
+
+</html>
